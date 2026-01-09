@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Agenda</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+    <div class="splash-screen">
+        <img src="assets/logo.png" alt="logo" />
+    </div>
+
+    <div class="app" style="display: none;">
+
+        <div class="img-end">
+            <img src="assets/logo.png" alt="logo" />
+        </div>
+
+        <!-- Header -->
+
+        <div class="header-center">
+            <h1 id="week"></h1>
+            <span id="date"></span>
+        </div>
+
+
+        <!-- Card -->
+        <section class="card">
+
+            <div class="card-title">
+                <span class="icon user">👤</span>
+                <span>PROGRAMA DO PÚLPITO</span>
+            </div>
+
+            <div class="card-content">
+
+                <p class="highlight" id="pulpito"></p>
+
+                <div class="row">
+                    <span class="label">PREGADOR</span>
+                    <span class="value" id="pregador"></span>
+                </div>
+
+                <div class="row">
+                    <span class="label">PROG. DE DEVOCIONAL</span>
+                    <span class="value" id="devocional"></span>
+                </div>
+
+                <div class="row">
+                    <span class="label">DIRIGENTE</span>
+                    <span class="value" id="dirigente"></span>
+                </div>
+
+            </div>
+
+        </section>
+
+        <div class="divider"></div>
+
+        <!-- Avisos -->
+        <section class="card">
+
+            <div class="card-title">
+                <span class="icon megaphone">📣</span>
+                <span>AVISOS</span>
+            </div>
+
+            <div class="list" id="avisosList">
+                <!-- Avisos entram aqui via JS -->
+            </div>
+
+        </section>
+
+        <div class="divider"></div>
+
+        <section class="card">
+
+            <div class="card-title">
+                <span class="icon search">🔎</span>
+                <span>NOTAS</span>
+            </div>
+
+            <div class="list" id="notasList">
+                <!-- Avisos entram aqui via JS -->
+            </div>
+
+        </section>
+
+        <div class="divider"></div>
+
+        <section class="card">
+
+            <div class="card-title">
+                <span class="icon">📋</span>
+                <span>ORDEM DO CULTO</span>
+            </div>
+
+            <div class="list" id="ordemList">
+                <!-- itens gerados via JS -->
+            </div>
+
+        </section>
+
+        <!-- Bottom Nav -->
+        <!--<nav class="bottom-nav">
+            <div class="nav-item">
+                <span>🏠</span>
+                <small>Início</small>
+            </div>
+            <div class="nav-item active">
+                <span>📅</span>
+                <small>Agenda</small>
+            </div>
+            <div class="nav-item">
+                <span>🔊</span>
+                <small>Avisos</small>
+            </div>
+        </nav>-->
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
