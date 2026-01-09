@@ -66,6 +66,16 @@ function fillOrdem(ordem) {
 
     ordemList.innerHTML = '';
 
+
+    if (!ordem || ordem.length === 0) {
+        ordemList.innerHTML = `
+            <div class="list-item empty">
+                <span>Nenhuma ordem</span>
+            </div>
+        `;
+        return;
+    }
+
     let index = 1;
 
     while (ordem[`Item${index}`]) {
@@ -140,11 +150,8 @@ async function startPage() {
         return;
     }
 
-    setTimeout(() => {
-        console.log('Splash Screen Fade Out');
-        document.querySelector('.splash-screen').style.display = 'none';
-        document.querySelector('.app').style.display = 'block';
-    }, 5000);
+    document.querySelector('.splash-screen').style.display = 'none';
+    document.querySelector('.app').style.display = 'block';
 
 }
 
